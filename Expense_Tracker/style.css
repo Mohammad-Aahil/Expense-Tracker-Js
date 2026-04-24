@@ -1,0 +1,121 @@
+/* RESET */
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: #f4f6f8;
+  margin: 0;
+  padding: 0;
+}
+
+/* CONTAINER */
+.container {
+  max-width: 420px;
+  margin: 40px auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* TITLE */
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* FORM */
+form {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+form input,
+form select,
+form button {
+  padding: 8px;
+  font-size: 14px;
+}
+
+form input,
+form select {
+  flex: 1 1 100%;
+}
+
+form button {
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background: #1e4fd8;
+}
+
+/* SUMMARY */
+.summary {
+  margin-top: 20px;
+  padding: 10px;
+  background: #f1f5f9;
+  border-radius: 6px;
+}
+
+.summary p {
+  margin: 6px 0;
+  font-weight: bold;
+}
+
+.income span {
+  color: green;
+}
+
+.expense span {
+  color: red;
+}
+
+/* TRANSACTION LIST */
+#transactionList {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+/* TRANSACTION ITEM */
+#transactionList li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+  margin-bottom: 8px;
+  background: #f9fafb;
+  border-left: 4px solid;
+  border-radius: 4px;
+}
+
+/* Color by type (optional enhancement later) */
+#transactionList li.income {
+  border-color: green;
+}
+
+#transactionList li.expense {
+  border-color: red;
+}
+
+/* DELETE BUTTON */
+.delete-btn {
+  background: none;
+  border: none;
+  color: #ef4444;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.delete-btn:hover {
+  transform: scale(1.1);
+}
+
